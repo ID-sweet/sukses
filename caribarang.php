@@ -22,8 +22,9 @@
     <?php foreach($models as $model):?>
       <tr>
         <th><?=$no++;?></th>
-        <th><input type="submit" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#id<?= $model['kode_barang'];?>" value="<?=$model["nama_barang"];?>">
-      <div class="modal fade mt-4" id="id<?= $model['kode_barang'];?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <th>
+        <input type="submit" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#id<?= $model['kode_barang'];?>" value="<?=$model["nama_barang"];?>">
+        <div class="modal fade mt-4" id="id<?= $model['kode_barang'];?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
